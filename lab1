@@ -1,0 +1,33 @@
+'''
+Chikondi Thangata
+3 September 2020
+Python 3.8.5
+Calculations with Python. This assignment shows the amount of runoff on an area of land in Kenya. The inputs are measurements of the land, and the amount of rainfall, and the outputs are area of the plot, rainfall in inches, and water runoff.
+'''
+
+#Area of the plot in square feet
+plot_length = 50
+plot_width = 20
+single_plot = plot_length*plot_width
+print("Area of the plot is", single_plot, "sq ft")
+
+#Area of the plot in square inches
+plot_length_inch = plot_length*12 #Multiply by 12 because there are 12inches in 1 foot (I forgot because I use metric system instead of inches) )
+plot_width_inch = plot_width*12
+
+print(plot_length_inch)
+print(plot_width_inch)
+
+#Cubic inches of rainfall, calculated using the length, width, and amount of rainfall.
+rainfall_inch = plot_width_inch*plot_length_inch*1 #Multiply by 1 as this is the amount of rainfall in inches.
+print("Rainfall is", rainfall_inch,"cubic inches")
+
+#This will convert the amount in cubic inches to gallons.
+runoff_gallons = single_plot_inch/0.004329 #This is the number of gallons in one cubic inch.
+runoff_gallons = round(runoff_gallons, 2) #I found this formula online to round the number to as many decimal points as you'd like.
+print("Rainfall runoff is", runoff_gallons, "gallons")
+
+print("Plot length is", plot_length_inch, "inches.")
+print("Plot width is", plot_width_inch, "inches.")
+print("Rainfall is", rainfall_inch, "cubic inches.")
+print("Runoff is", runoff_gallons, "gallons.")

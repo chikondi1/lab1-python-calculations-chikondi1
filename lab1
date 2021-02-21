@@ -23,7 +23,7 @@ rainfall_inch = plot_width_inch*plot_length_inch*1 #Multiply by 1 as this is the
 print("Rainfall is", rainfall_inch,"cubic inches")
 
 #This will convert the amount in cubic inches to gallons.
-runoff_gallons = single_plot_inch/0.004329 #This is the number of gallons in one cubic inch.
+runoff_gallons = single_plot/0.004329 #This is the number of gallons in one cubic inch.
 runoff_gallons = round(runoff_gallons, 2) #I found this formula online to round the number to as many decimal points as you'd like.
 print("Rainfall runoff is", runoff_gallons, "gallons")
 
